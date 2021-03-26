@@ -13,6 +13,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;   
+    z-index: 100;
 }
 
 .top-bar-content{
@@ -95,6 +96,7 @@ p{
     display: flex;
     width: 66px;
     height: 66px;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     background-image: url(../img/stories_circle.png);
@@ -102,13 +104,71 @@ p{
 }
 
 .post{
-    height: 400px;
+    
     margin-bottom: 60px;
     background-color: #fff;
     border: 1px solid #dbdbdb;
+    overflow: hidden;
+    
 }
 .post:last-child{
     margin-bottom: 114px;
+}
+.post video, .post > img{
+    width: 100%;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+}
+.post-header > div{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.post-header div img{
+    width: 32px;
+    margin: 0 14px;
+}
+
+.more{
+    
+    width: 16px;
+    margin-right: 40px;
+    
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.post-footer > img{
+    width: 22px;
+    margin-right: 20px;
+}
+.post-footer div{
+    display: flex;
+    align-items: center;
+   
+}
+.post-footer ion-icon{
+    font-size: 25px;
+    margin: 20px;
+}
+.chat{
+    width: 20px;
+    transform: scaleX(-1);
+}
+
+.interactions{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interactions img{
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 .side-bar{
