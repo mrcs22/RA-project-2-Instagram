@@ -174,10 +174,101 @@ p{
 .side-bar{
     height: calc(100vh - 88px) ;
     width: 293px;
-    border: 1px solid #dbdbdb;
     position: fixed;
     top: 88px;
     left: calc(50vw + 175px);
+}
+
+.side-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.side-profile strong{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #262626;
+}
+
+.side-profile p{
+    font-size: 14px;
+    line-height: 18px;
+    color: #8e8e8e;
+}
+
+
+
+.side-profile div:first-child{
+    display: flex;
+    align-items: center;
+}
+.side-profile img:first-child{
+    width: 56px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.suggestion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggestion p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #8e8e8e;
+}
+
+.suggestion a{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #262626;
+}
+
+.suggested-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+
+}
+.suggested-profile > div{
+display: flex;    
+}
+.suggested-profile img{
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+
+.suggested-profile strong{
+    font-size: 14px;
+    line-height: 18px;
+    color: #262626;
+}
+
+.suggested-profile p{
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+}
+
+.side-links, .copyright{
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+    margin: 15px 0;
+}
+
+.side-links{
+    margin-top: 30px;
 }
 
 .footer-menu{
