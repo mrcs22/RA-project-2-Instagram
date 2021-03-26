@@ -1,5 +1,6 @@
 body{
     background-color: #fafafa;
+    font-family: Helvetica, sans-serif;
 }
 
 .top-bar{
@@ -56,6 +57,7 @@ ion-icon:first-child{
     background-color: #fafafa;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
+    overflow: hidden;
 }
 
 #search > ion-icon{
@@ -85,6 +87,7 @@ ion-icon:first-child{
 }
 
 .storie{
+    text-align: center;
     margin: 0 8px;
     width: 66px;
     height: 66px;    
@@ -121,9 +124,7 @@ p{
     overflow: hidden;
     
 }
-.post:last-child{
-    margin-bottom: 114px;
-}
+
 .post video, .post > img{
     width: 100%;
 }
@@ -262,6 +263,11 @@ display: flex;
     font-size: 14px;
     line-height: 18px;
     color: #262626;
+    cursor: pointer;
+}
+
+.suggested-profile strong:hover{
+text-decoration: underline;
 }
 
 .suggested-profile p{
@@ -290,6 +296,10 @@ display: flex;
     position: fixed;
     left: 0;
     bottom: 0;
+}
+
+ion-icon, .more, .bookmark, .chat{
+    cursor: pointer;
 }
 
 @media (max-width: 935px){
@@ -342,6 +352,10 @@ display: flex;
     }
     .container, .content, .post{
         width: 100%;
+    }
+
+    .post:last-child{
+        margin-bottom: 114px;
     }
 
     .footer-menu{
