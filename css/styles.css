@@ -182,6 +182,65 @@ p{
     margin-right: 10px;
 }
 
+.comment-output{
+margin: 8px 20px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.comment-output a{
+    color:#00376b;
+    font-weight: normal;
+}
+
+.comment-output div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-output ion-icon{
+    font-size: 12px;
+}
+
+.comment-input{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-top: 1px solid #dbdbdb;
+}
+#new-comment{
+    width: calc(100% - 100px);
+    border: none;
+}
+
+button{
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    color: #B2DFFC;
+    font-size: 14px;
+    line-height: 18px ;
+    transition: 300ms;
+
+
+}
+
+button:hover{
+    color: #0095F6;
+}
+.see-more{
+    
+    color: #8e8e8e;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.comment{
+    
+    color: #262626
+}
 .side-bar{
     height: calc(100vh - 88px) ;
     width: 293px;
@@ -307,9 +366,14 @@ ion-icon, .more, .bookmark, .chat{
         width: 614px;
     }
 
+    .comment-input{
+        display: none;
+    }
+
     .side-bar{
         display: none;
     }
+
 
 }
 
